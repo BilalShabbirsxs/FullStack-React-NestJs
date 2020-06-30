@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 
 export default class ClassList extends Component{
     state = {
@@ -58,7 +58,7 @@ export default class ClassList extends Component{
                             <td>{clas.title}</td>
                             <td>{clas.subject}</td>
                             <td><button onClick={e=> this.handleDelete(e ,clas._id) }>Delete</button></td>
-                            <td><Link to={"/update/"+clas._id}>Update</Link></td>
+                            <td><button onClick={e=> window.location.href='/update/'+clas._id}>Update</button></td>
                         </tr>
                     )}
                     </tbody>

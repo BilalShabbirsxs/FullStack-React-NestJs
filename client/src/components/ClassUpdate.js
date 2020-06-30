@@ -16,6 +16,8 @@ export default class ClassInput extends Component{
         });
     }
 
+    
+
     handleSubmit=event=>{
         event.preventDefault();
 
@@ -39,7 +41,7 @@ export default class ClassInput extends Component{
     return (
      <form onSubmit={e=> this.handleSubmit(e)}>
          <label>ClassName:</label>
-             <input  type="text" name="title" onChange={this.handleChange} />
+             <input type="text" name="title" onChange={this.handleChange} />
          <label>Subject:</label>
              <input type="text" name="subject" onChange={this.handleChange}/>
          <button type="submit">Update Class</button>
