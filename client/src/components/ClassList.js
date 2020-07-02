@@ -38,7 +38,7 @@ export default class ClassList extends Component{
 
     render(){
     return (
-        <div>
+        <div className="container">
             
                 <table>
                     <thead>

@@ -35,6 +35,7 @@ export default class ClassInput extends Component{
 
     render(){
     return (
+    <div className="container">
      <form onSubmit={this.handleSubmit}>
          <label>ClassName:</label>
              <input type="text" name="title" onChange={this.handleChange} />
@@ -42,6 +43,7 @@ export default class ClassInput extends Component{
              <input type="text" name="subject" onChange={this.handleChange}/>
          <button type="submit">Insert Class</button>
      </form>
+     </div>
     )
     }
 
